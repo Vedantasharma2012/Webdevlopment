@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedanta Sharma | Logo Design Portfolio</title>
+    <meta name="description" content="Professional logo design portfolio of Vedanta Sharma. Creating memorable brand identities through thoughtful design.">
+    <meta name="keywords" content="logo design, brand identity, graphic design, portfolio, Vedanta Sharma">
+    <meta name="author" content="Vedanta Sharma">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#8B5CF6",
+                        secondary: "#10B981",
+                        dark: "#0F172A",
+                        "dark-light": "#1E293B",
+                        accent: "#F59E0B"
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'poppins': ['Poppins', 'sans-serif']
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        ::selection {
+            background-color: rgba(139, 92, 246, 0.3);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-dark text-gray-300 font-inter">Total image 
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-dark/95 backdrop-blur-sm border-b border-dark-light">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#home" class="text-2xl font-poppins font-bold text-white">
+                    <span class="text-primary">V</span>edanta<span class="text-primary">S</span>
+                </a>
+                <ul id="nav-menu" class="hidden md:flex items-center space-x-8"></ul>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-400 hover:text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+                <ul id="mobile-nav-list" class="space-y-4"></ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                <div class="lg:w-1/2">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-poppins font-bold text-white mb-6">
+                        Crafting <span class="text-primary">Memorable</span> Brand Identities
+                    </h1>
+                    <p class="text-xl text-gray-400 mb-8">
+                        I'm <span class="text-white font-semibold">Vedanta Sharma</span>, a logo designer,<span class="text-white font-semibold">Web Devloper</span>, specializing in creating unique, scalable brand marks that tell your story.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#portfolio" class="bg-primary hover:bg-purple-700 text-white font-medium px-8 py-3 rounded-lg transition duration-300 transform hover:-translate-y-1">
+                            View Portfolio
+                        </a>
+                        <a href="#contact" class="border border-gray-700 hover:border-primary text-white font-medium px-8 py-3 rounded-lg transition duration-300">
+                            Get in Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary to-secondary animate-float"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <img src="V.jpeg" alt="Vedanta Sharma"
+     class="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-primary">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-dark-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-poppins font-bold text-white mb-4">Featured Logo Designs</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Each logo tells a unique story and represents the brand's core values and vision.</p>
+            </div>
+            <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-poppins font-bold text-white mb-4">Design Services</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Comprehensive logo design solutions tailored to your brand needs.</p>
+            </div>
+            <div id="services-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-16 bg-dark-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-poppins font-bold text-white mb-4">My Design Process</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">A structured approach to ensure every logo meets the highest standards.</p>
+            </div>
+            <div id="process-steps" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-poppins font-bold text-white mb-4">Client Testimonials</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">What clients say about working with me.</p>
+            </div>
+            <div id="testimonials-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-dark-light">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-white mb-4">Let's Create Something Amazing</h2>
+                    <p class="text-gray-400">Ready to bring your brand to life with a memorable logo?</p>
+                </div>
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-gray-400 mb-2">Full Name</label>
+                            <input type="text" id="name" required class="w-full bg-dark border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition duration-300">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-400 mb-2">Email Address</label>
+                            <input type="email" id="email" required class="w-full bg-dark border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition duration-300">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="project" class="block text-gray-400 mb-2">Project Type</label>
+                        <select id="project" class="w-full bg-dark border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition duration-300">
+                            <option value="">Select project type</option>
+                            <option value="logo">Logo Design</option>
+                            <option value="rebrand">Brand Redesign</option>
+                            <option value="identity">Full Brand Identity</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-400 mb-2">Project Details</label>
+                        <textarea id="message" rows="5" required class="w-full bg-dark border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition duration-300"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary hover:bg-purple-700 text-white font-medium py-3 rounded-lg transition duration-300 transform hover:-translate-y-1">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-dark-light">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#home" class="text-2xl font-poppins font-bold text-white">
+                        <span class="text-primary">V</span>edanta<span class="text-primary">S</span>
+                    </a>
+                    <p class="text-gray-500 mt-2">Logo Design Specialist</p>
+                    <p class="text-gray-400 mt-2">📱 Phone: 6000479971</p>
+<p class="text-gray-400">📧 Email: madhavisharma133@gmail.com</p>
+<p class="text-gray-500 text-sm">I respond faster on phone than email.</p>
+                </div>
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                     <a href="#" class="text-gray-400 hover:text-primary transition duration-300">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-500">© 2024 Vedanta Sharma. All rights reserved.</p>
+                    <p class="text-gray-600 text-sm mt-1">Crafting brands that stand out</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Data Layer
+        const navigationItems = [
+            { "label": "Home", "href": "#home", "icon": "fas fa-home" },
+            { "label": "Portfolio", "href": "#portfolio", "icon": "fas fa-briefcase" },
+            { "label": "Services", "href": "#services", "icon": "fas fa-cogs" },
+            { "label": "Process", "href": "#process", "icon": "fas fa-sitemap" },
+            { "label": "Testimonials", "href": "#testimonials", "icon": "fas fa-comment" },
+            { "label": "Contact", "href": "#contact", "icon": "fas fa-envelope" }
+        ];
+const portfolioItems = [
+    { 
+        title: "BullMarket Analytics", 
+        category: "Finance", 
+        description: "Premium stock market logo with bull and growth chart concept",
+        image: "logo.webp",
+        alt: "Stock market bull logo"
+    },
+    { 
+        title: "Fiko Coffee Roasters", 
+        category: "Logo Design", 
+        description: "Modern coffee brand logo with clean typography and bean icon",
+        image: "coffe.png",
+        alt: "Coffee brand logo"
+    },
+    { 
+        title: "Friend Builders", 
+        category: "Logo Design", 
+        description: "Construction company logo with strong building and community concept",
+        image: "company.png",
+        alt: "Construction logo"
+    },
+    { 
+        title: "Editing Breakdown Thumbnail", 
+        category: "Thumbnail Design", 
+        description: "YouTube thumbnail focused on video editing breakdown and tools",
+        image: "addit.png",
+        alt: "Editing thumbnail"
+    },
+    { 
+        title: "Assam Travel Vlog Thumbnail", 
+        category: "Thumbnail Design", 
+        description: "Travel vlog thumbnail showcasing tea gardens and cinematic visuals",
+        image: "vlog.png",
+        alt: "Travel thumbnail"
+    },
+     { 
+        title: "Web Devlopment", 
+        category: "Finance Web", 
+        description: "Luxury finance brand Web with strong golden identity",
+        image: "g.png",
+        alt: "Finance luxury web"
+    },
+    { 
+    
+        title: "Titan Capital", 
+        category: "Finance", 
+        description: "Luxury finance brand logo with strong golden identity",
+        image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800",
+        alt: "Finance luxury logo"
+    }
+];
+        const services = [
+           {
+            "title": "Web devloper",
+                "description": "Modernizing existing desin of Web for contemporary appeal",
+                "icon": "fas fa-sync-alt",
+                "features": ["Brand web audit", "Modern concepts of web", "Smooth transition", "Updated guidelines"]
+            },
+            {
+                "title": "Logo Design",
+                "description": "Custom logo creation from concept to final files",
+                "icon": "fas fa-pen-nib",
+                "features": ["3 initial concepts", "Unlimited revisions", "Vector files", "Color variations"]
+            },
+            {
+                "title": "Brand Identity",
+                "description": "Complete brand system including guidelines",
+                "icon": "fas fa-palette",
+                "features": ["Logo suite", "Color palette", "Typography", "Brand guidelines"]
+            },
+             {
+        "title" :"Thumbnail Design",
+       "description" : "Eye-catching YouTube thumbnails that increase clicks",
+        "icon" : "fas fa-image",
+        "features" : ["High CTR design", "Bold typography", "Trending style", "Fast delivery"]
+    },
+    {
+        "title" : "Graphic Design",
+        "description" : "Creative graphic designs for social media and branding",
+        "icon" : "fas fa-paint-brush",
+        "features" : ["Post design", "Banner design", "Social media creatives", "Modern visuals"]
+    },
+     {
+                "title": "Logo Redesign",
+                "description": "Modernizing existing logos for contemporary appeal",
+                "icon": "fas fa-sync-alt",
+                "features": ["Brand audit", "Modern concepts", "Smooth transition", "Updated guidelines"]
+            }
+        ];
+
+        const processSteps = [
+            {
+                "step": "01",
+                "title": "Discovery",
+                "description": "Understanding your brand, audience, and goals through detailed consultation.",
+                "icon": "fas fa-search"
+            },
+            {
+                "step": "02",
+                "title": "Conceptualization",
+                "description": "Creating multiple design directions based on research and insights.",
+                "icon": "fas fa-lightbulb"
+            },
+            {
+                "step": "03",
+                "title": "Refinement",
+                "description": "Iterating on selected concepts with feedback and adjustments.",
+                "icon": "fas fa-hammer"
+            },
+            {
+                "step": "04",
+                "title": "Delivery",
+                "description": "Providing final files and brand guidelines for all applications.",
+                "icon": "fas fa-rocket"
+            }
+        ];
+
+        const testimonials = [
+            {
+                "name": "Sarah Johnson",
+                "company": "TechNova Inc.",
+                "text": "Vedanta created a logo that perfectly captures our innovative spirit. The process was smooth and professional.",
+                "rating": 5,
+                "image": "https://picsum.photos/100?random=201"
+            },
+            {
+                "name": "Michael Chen",
+                "company": "Urban Brew Co.",
+                "text": "Our new logo has transformed our brand presence. Highly recommend Vedanta's expertise and creativity.",
+                "rating": 5,
+                "image": "https://picsum.photos/100?random=202"
+            },
+            {
+                "name": "Elena Rodriguez",
+                "company": "GreenLeaf Organics",
+                "text": "Working with Vedanta was a pleasure. He understood our vision and delivered beyond expectations.",
+                "rating": 5,
+                "image": "https://picsum.photos/100?random=203"
+            }
+        ];
+
+        // Reusable Render Functions
+        function renderNavigation(items) {
+            return items.map(item => 
+                `<li>
+                    <a href="${item.href}" class="text-gray-400 hover:text-primary transition duration-300 flex items-center gap-2">
+                        <i class="${item.icon}"></i>
+                        ${item.label}
+                    </a>
+                </li>`
+            ).join("");
+        }
+
+        function renderPortfolioItems(items) {
+            return items.map(item => 
+                `<div class="group relative overflow-hidden rounded-xl bg-dark border border-gray-800 hover:border-primary transition duration-300 transform hover:-translate-y-2">
+                    <div class="overflow-hidden">
+                        <img src="${item.image}" alt="${item.alt}" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 text-xs font-medium bg-primary/20 text-primary rounded-full mb-3">
+                            ${item.category}
+                        </span>
+                        <h3 class="text-xl font-semibold text-white mb-2">${item.title}</h3>
+                        <p class="text-gray-400">${item.description}</p>
+                    </div>
+                </div>`
+            ).join("");
+        }
+
+        function renderServices(items) {
+            return items.map(service => 
+                `<div class="bg-dark border border-gray-800 rounded-xl p-6 hover:border-primary transition duration-300">
+                    <div class="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-6">
+                        <i class="${service.icon} text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">${service.title}</h3>
+                    <p class="text-gray-400 mb-4">${service.description}</p>
+                    <ul class="space-y-2">
+                        ${service.features.map(feature => 
+                            `<li class="flex items-center text-gray-400">
+                                <i class="fas fa-check text-secondary mr-2"></i>
+                                ${feature}
+                            </li>`
+                        ).join("")}
+                    </ul>
+                </div>`
+            ).join("");
+        }
+
+        function renderProcessSteps(items) {
+            return items.map(step => 
+                `<div class="text-center">
+                    <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-primary">${step.step}</span>
+                    </div>
+                    <div class="w-12 h-12 rounded-lg bg-dark-light flex items-center justify-center mx-auto mb-4">
+                        <i class="${step.icon} text-secondary text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-3">${step.title}</h3>
+                    <p class="text-gray-400">${step.description}</p>
+                </div>`
+            ).join("");
+        }
+
+        function renderTestimonials(items) {
+            return items.map(testimonial => 
+                `<div class="bg-dark border border-gray-800 rounded-xl p-6">
+                    <div class="flex items-center mb-6">
+                        <img src="${testimonial.image}" alt="${testimonial.name}" class="w-12 h-12 rounded-full mr-4" loading="lazy">
+                        <div>
+                            <h4 class="font-semibold text-white">${testimonial.name}</h4>
+                            <p class="text-gray-500 text-sm">${testimonial.company}</p>
+                        </div>
+                    </div>
+                    <div class="flex text-accent mb-4">
+                        ${Array(testimonial.rating).fill().map(() => '<i class="fas fa-star"></i>').join("")}
+                    </div>
+                    <p class="text-gray-400 italic">"${testimonial.text}"</p>
+                </div>`
+            ).join("");
+        }
+
+        // Initialize Page Content
+        document.getElementById("nav-menu").innerHTML = renderNavigation(navigationItems);
+        document.getElementById("mobile-nav-list").innerHTML = renderNavigation(navigationItems);
+        document.getElementById("portfolio-grid").innerHTML = renderPortfolioItems(portfolioItems);
+        document.getElementById("services-grid").innerHTML = renderServices(services);
+        document.getElementById("process-steps").innerHTML = renderProcessSteps(processSteps);
+        document.getElementById("testimonials-grid").innerHTML = renderTestimonials(testimonials);
+
+        // Mobile Menu Toggle
+        document.getElementById("mobile-menu-btn").addEventListener("click", function() {
+            const mobileMenu = document.getElementById("mobile-menu");
+            mobileMenu.classList.toggle("hidden");
+            const icon = this.querySelector("i");
+            icon.classList.toggle("fa-bars");
+            icon.classList.toggle("fa-times");
+        });
+
+        // Smooth Scrolling for Navigation Links
+        document.addEventListener("click", function(event) {
+            const link = event.target.closest("a[href^='#']");
+            if (!link) return;
+            
+            event.preventDefault();
+            const targetId = link.getAttribute("href");
+            if (targetId === "#") return;
+            
+            const target = document.querySelector(targetId);
+            if (target) {
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById("mobile-menu");
+                if (!mobileMenu.classList.contains("hidden")) {
+                    mobileMenu.classList.add("hidden");
+                    const menuBtn = document.getElementById("mobile-menu-btn");
+                    const icon = menuBtn.querySelector("i");
+                    icon.classList.remove("fa-times");
+                    icon.classList.add("fa-bars");
+                }
+                
+                window.scrollTo({
+                    top: target.offsetTop - 80,
+                    behavior: "smooth"
+                });
+            }
+        });
+
+        // Contact Form Submission
+       
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const project = document.getElementById("project").value;
+    const message = document.getElementById("message").value;
+
+    const whatsappNumber = "916000479971";
+
+    const text = `Hello, my name is ${name}%0AEmail: ${email}%0AProject: ${project}%0AMessage: ${message}`;
+
+    const url = `https://wa.me/${whatsappNumber}?text=${text}`;
+
+    window.open(url, "_blank");
+});
+        // Add scroll effect to header
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector("header");
+            if (window.scrollY > 100) {
+                header.classList.add("shadow-lg");
+            } else {
+                header.classList.remove("shadow-lg");
+            }
+        });
+    </script>
+</body>
+</html>
